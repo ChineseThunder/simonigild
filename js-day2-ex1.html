@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>js-day2-ex1.html</title>
+</head>
+<body>
+<ul>
+    <button>
+        <a href="index.html">Index</a>
+    </button>
+</ul>
+
+<div id="div1" style="width: 100px;margin: 1px;">&nbsp;</div>
+<div id="div2" style="width: 100px;margin: 1px;">&nbsp;</div>
+<div id="div3" style="width: 100px;margin: 1px;">&nbsp;</div>
+
+<button id="button" >
+    klik mig
+</button>
+
+<script>
+
+
+    const styleHere = document.querySelectorAll("div")
+    for (var i = 0; i < styleHere.length; i++){
+        styleHere[i].style.backgroundColor = "blue"
+    }
+
+    const div = document.querySelectorAll("div")
+    document.getElementById("button").onclick = ()=> {
+        div[0].style.backgroundColor = "red"
+        div[1].style.backgroundColor = "white"
+        div[2].style.backgroundColor = "red"
+    }
+</script>
+
+</body>
+</html>

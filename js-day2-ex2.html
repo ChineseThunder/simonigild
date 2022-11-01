@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="./bobling.js" type="module"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>js-day2-ex2.html</title>
+</head>
+<style>
+    .my-div {width: 25px; height: 25px;background-color:red; margin:1px;}
+</style>
+<body>
+<ul>
+    <button>
+        <a href="index.html">Index</a>
+    </button>
+</ul>
+
+    <div id="div1.0" class="my-div"onclick="klik1(this)"></div>
+    <div id="div2.0" class="my-div"onclick="klik2(this)"></div>
+
+<div id="daddyDiv">
+    <div id="div1" class="my-div"></div>
+    <div id="div2" class="my-div"></div>
+    <div id="div3" class="my-div"></div>
+    <div id="div4" class="my-div"></div>
+    <div id="div5" class="my-div"></div>
+    <div id="div6" class="my-div"></div>
+    <div id="div7" class="my-div"></div>
+    <div id="div8" class="my-div"></div>
+    <div id="div9" class="my-div"></div>
+    <div id="div10" class="my-div"></div>
+</div>
+<p id="divtekst"></p>
+
+
+<script>
+    function klik1(id) {
+        id.innerHTML = "div1.0!";
+    }
+    function klik2(id) {
+        id.innerHTML = "div2.0!";
+    }
+    function klik3(id) {
+        id.innerHTML = "Hi from daddy!";
+    }
+</script>
+</body>
+</html>
